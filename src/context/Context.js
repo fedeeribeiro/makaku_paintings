@@ -69,7 +69,7 @@ const ContextProvider = ({ children }) => {
         .then(res => res.json())
         .then(data => {
             setURL(data.url);
-            console.log('URL set')
+            console.log('URL set', URL)
         });
     }
 
@@ -93,7 +93,7 @@ const ContextProvider = ({ children }) => {
         emailjs.send('makaku_paintings_orders', 'orders_template', templateParams, 'Wiexd527yJxBmJMHs')
         .then((result) => {
             console.log(result.text);
-            console.log('email sent')
+            console.log('email sent with params', templateParams)
         }, (error) => {
             console.log(error.text);
         });
