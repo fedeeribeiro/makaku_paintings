@@ -68,9 +68,12 @@ const ContextProvider = ({ children }) => {
         })
         .then(res => res.json())
         .then(data => {
+            console.log('URL vale', URL)
             console.log(data)
             console.log(data.url)
-            setURL(data.url);
+            const url = data.url;
+            setURL(url);
+            console.log('URL ahora vale', URL)
             console.log('URL set', URL)
         });
     }
