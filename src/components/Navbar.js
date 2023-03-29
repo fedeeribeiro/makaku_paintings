@@ -33,13 +33,13 @@ export default function Navbar() {
                     <Box component={ Link } to='/home' sx={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', display: { xs: 'flex', sm: 'none' } }}>
                         <img height='49px' 
                             alt='Makaku Paintings logo' 
-                            src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679518063/makaku/logoPNG_uj8q9v.png'/>
+                            src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071566/makaku-paintings-app-assets/logoPNG_jknfmg.png'/>
                     </Box>
                     <StyledTabs value={page} onChange={switchPage} sx={{ display: { xs: 'none', sm: 'flex' } }}>
                         <Box component={ Link } to='/home'>
                             <img height='49px' 
                                 alt='Makaku Paintings logo' 
-                                src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679518063/makaku/logoPNG_uj8q9v.png'/>
+                                src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071566/makaku-paintings-app-assets/logoPNG_jknfmg.png'/>
                         </Box>                
                         <StyledTab id='ilustraciones' label='ILUSTRACIONES' component={ Link } to='/ilustraciones' />
                         <StyledTab id='cuadros' label='CUADROS' component={ Link } to='/cuadros' />
@@ -125,85 +125,3 @@ export default function Navbar() {
         </AppBar>
     );
 }
-
-
-
-// const Navbar = () => {
-//     const { page, setPage, switchPage } = useContext(Context);
-
-//     const pages = ['Products', 'Pricing', 'Blog'];
-//     const [anchorElNav, setAnchorElNav] = React.useState(null);
-
-//     const handleOpenNavMenu = (event) => {
-//       setAnchorElNav(event.currentTarget);
-//     };
-  
-//     const handleCloseNavMenu = () => {
-//       setAnchorElNav(null);
-//     };
-
-//     return (
-//         <Box sx={{ height: '49px', padding: '16px 43px' }}>
-//             <AppBar position="static">
-//                 <Container maxWidth="xl">
-//                     <Toolbar disableGutters>
-//                         <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-//                             <IconButton
-//                                 size="large"
-//                                 aria-label="account of current user"
-//                                 aria-controls="menu-appbar"
-//                                 aria-haspopup="true"
-//                                 onClick={handleOpenNavMenu}
-//                                 color="inherit"
-//                                 sx={{ height: '49px' }}>
-//                                 <MenuIcon />
-//                             </IconButton>
-//                             <Menu
-//                                 id="menu-appbar"
-//                                 anchorEl={anchorElNav}
-//                                 anchorOrigin={{
-//                                     vertical: 'bottom',
-//                                     horizontal: 'left',
-//                                 }}
-//                                 keepMounted
-//                                 transformOrigin={{
-//                                     vertical: 'top',
-//                                     horizontal: 'left',
-//                                 }}
-//                                 open={Boolean(anchorElNav)}
-//                                 onClose={handleCloseNavMenu}
-//                                 sx={{
-//                                     display: { xs: 'block', md: 'none' },
-//                                     position: 'absolute'
-//                                 }}>
-//                                 {pages.map((page) => (
-//                                     <MenuItem key={page} onClick={handleCloseNavMenu}>
-//                                         <Typography textAlign="center">{page}</Typography>
-//                                     </MenuItem>
-//                                 ))}
-//                             </Menu>
-//                             <Box onClick={ () => setPage(0) } component={ Link } to='/home' sx={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)' }}>
-//                                 <img height='49px'
-//                                     alt='Makaku Paintings logo'
-//                                     src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679518063/makaku/logoPNG_uj8q9v.png'/>
-//                             </Box> 
-//                             <Box></Box>
-//                         </Box>
-                        
-//                         <StyledTabs value={page} onChange={switchPage} sx={{ display: { xs: 'none', md: 'flex' } }}>
-//                             <Box onClick={ () => setPage(0) } component={ Link } to='/home'>
-//                                 <img height='49px' 
-//                                     alt='Makaku Paintings logo' 
-//                                     src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679518063/makaku/logoPNG_uj8q9v.png'/>
-//                             </Box>                
-//                             <StyledTab id='ilustraciones' label='ILUSTRACIONES' component={ Link } to='/ilustraciones' />
-//                             <StyledTab id='cuadros' label='CUADROS' component={ Link } to='/cuadros' />
-//                         </StyledTabs>
-//                     </Toolbar>
-//                 </Container>
-//             </AppBar>
-//         </Box>
-//     );
-// }
-
-// export default Navbar;

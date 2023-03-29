@@ -12,17 +12,17 @@ const HomeContainer = () => {
     const { displaySize } = useContext(Context);
     
     const images = [
-        'https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923713/makaku/mockup-cuadros-home-1_v2j6qq.png',
-        'https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923713/makaku/mockup-cuadros-home-2_fknjwt.png',
-        'https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923713/makaku/mockup-cuadros-home-3_ecytcl.png',
-        'https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923713/makaku/mockup-cuadros-home-4_sjmcxs.png'
+        'https://res.cloudinary.com/makaku-paintings/image/upload/v1680071567/makaku-paintings-app-assets/mockup-cuadros-home-1_vdnhlb.png',
+        'https://res.cloudinary.com/makaku-paintings/image/upload/v1680071567/makaku-paintings-app-assets/mockup-cuadros-home-2_fghd0e.png',
+        'https://res.cloudinary.com/makaku-paintings/image/upload/v1680071567/makaku-paintings-app-assets/mockup-cuadros-home-3_ukj2fv.png',
+        'https://res.cloudinary.com/makaku-paintings/image/upload/v1680071567/makaku-paintings-app-assets/mockup-cuadros-home-4_ugzagd.png'
       ];
 
     return (
         <main>
             <Box sx={{ display: 'flex',
                 padding: displaySize !== 'xs' ? '66px 43px' : '35px 22px',
-                backgroundImage: 'url("https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679545225/makaku/home-bg_b6dz5a.jpg")',
+                backgroundImage: 'url("https://res.cloudinary.com/makaku-paintings/image/upload/v1680071567/makaku-paintings-app-assets/home-bg_vzh5cd.jpg")',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center top',
@@ -39,13 +39,13 @@ const HomeContainer = () => {
                     </Grid>
                     <Grid xs={4} md={2} sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
                         <img style={{ alignSelf: 'flex-end', maxWidth: '100%', verticalAlign: 'bottom', bottom: 0 }} alt='mockup de ilustración pequeña'
-                            src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923713/makaku/mockup-ilustraciones-home-small_pdbly0.png'
+                            src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071568/makaku-paintings-app-assets/mockup-ilustraciones-home-small_nuqu4x.png'
                             max-height='100%'    
                         />
                     </Grid>
                     <Grid xs={8} md={4} sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
                         <img style={{ alignSelf: 'flex-end', maxWidth: '100%' }} alt='mockup de ilustración grande'
-                            src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923713/makaku/mockup-ilustraciones-home-large_d68lvp.png'   
+                            src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071567/makaku-paintings-app-assets/mockup-ilustraciones-home-large_gphyf8.png'   
                         />
                     </Grid>
                     <Grid xs={12} sx={{ marginTop: '20px' }}>

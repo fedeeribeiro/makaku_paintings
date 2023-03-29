@@ -30,7 +30,7 @@ const FormAlert = (props) => {
                     </Paragraph>
                     <img style={{ alignSelf: 'center', maxWidth: '60px', verticalAlign: 'bottom', bottom: 0 }}
                         alt='makaku logo' 
-                        src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1680009704/makaku/logoAlert_l0ut7i.svg' 
+                        src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071618/makaku-paintings-app-assets/logoAlert_tyyi98.svg' 
                     />
                 </Stack>
             </StyledAlert>

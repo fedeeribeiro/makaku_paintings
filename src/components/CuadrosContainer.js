@@ -28,7 +28,7 @@ const CuadrosContainer = () => {
         <main>
             <Box  sx={{ display: 'flex',
             padding: displaySize !== 'xs' ? '66px 43px' : '35px 22px',
-            backgroundImage: 'url("https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679545225/makaku/cuadros-bg_jn2epd.jpg")',
+            backgroundImage: 'url("https://res.cloudinary.com/makaku-paintings/image/upload/v1680071566/makaku-paintings-app-assets/cuadros-bg_yy6fqw.jpg")',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center top',
@@ -39,7 +39,7 @@ const CuadrosContainer = () => {
                         <Box>
                             <img style={{ alignSelf: 'flex-end', verticalAlign: 'bottom', bottom: 0, maxWidth: '100%' }} 
                                 alt='mockup de cuadro grande'
-                                src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923714/makaku/mockup-cuadros-page-large_e77pox.png'
+                                src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071567/makaku-paintings-app-assets/mockup-cuadros-page-large_vcb1rp.png'
                             />
                             <Header disableTypography sx={{ fontSize: displaySize === 'xs' ? '25px' : '50px', marginTop: '20px' }}>CUADRO<br/>PERSONALIZADO</Header>
                             <Paragraph disableTypography sx={{ fontSize: displaySize === 'xs' ? '15px' : '20px', marginTop: '20px' }}>Precio a acordar.</Paragraph>

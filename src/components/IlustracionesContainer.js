@@ -28,7 +28,7 @@ const IlustracionesContainer = () => {
         <main>
             <Box  sx={{ display: 'flex',
             padding: displaySize !== 'xs' ? '66px 43px' : '35px 22px',
-            backgroundImage: 'url("https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679545225/makaku/ilustraciones-bg_du5rtl.jpg")',
+            backgroundImage: 'url("https://res.cloudinary.com/makaku-paintings/image/upload/v1680071566/makaku-paintings-app-assets/ilustraciones-bg_ubmvmd.jpg")',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center top',
@@ -39,7 +39,7 @@ const IlustracionesContainer = () => {
                         <Box>
                             <img style={{ alignSelf: 'flex-end', verticalAlign: 'bottom', bottom: 0, maxWidth: '100%' }} 
                                 alt='mockup de ilustración grande'
-                                src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923713/makaku/mockup-ilustraciones-page-large_dpmbxw.png'
+                                src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071568/makaku-paintings-app-assets/mockup-ilustraciones-page-large_tv24rz.png'
                             />
                             <Header disableTypography sx={{ fontSize: displaySize === 'xs' ? '25px' : '50px', marginTop: '20px' }}>ILUSTRACIÓN<br/>PERSONALIZADA</Header>
                             <Paragraph disableTypography sx={{ fontSize: displaySize === 'xs' ? '15px' : '20px', marginTop: '20px' }}>$3.500</Paragraph>
