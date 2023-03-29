@@ -60,14 +60,12 @@ const ContextProvider = ({ children }) => {
         formData.append('file', selectedFile);
         formData.append('upload_preset', 'makaku-paintings-orders');
         formData.append('cloud_name', 'makaku-paintings');
-        fetch('https://api.cloudinary.com/v1_1/makaku-paintings/image/upload', {
+        const response = await fetch('https://api.cloudinary.com/v1_1/makaku-paintings/image/upload', {
             method: 'POST',
             body: formData
-        })
-        .then(res => res.json())
-        .then(data => {
-            return data.url;
         });
+        const data = await response.json();
+        return data.url;
     }
 
     const [orderName, setOrderName] = useState('');
@@ -77,7 +75,6 @@ const ContextProvider = ({ children }) => {
 
 	const submitOrder = async (e) => {
         const URL = await imageUpload();
-        console.log('URL vale', URL)
         const orderType = (e.target.id === 'submitIlustraciones') ? 'Ilustraciones' : 'Cuadros';
         const templateParams = {
             orderNumber,
