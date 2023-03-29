@@ -1,3 +1,7 @@
+<a name="readme-top"></a>
+
+
+
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -5,6 +9,8 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -26,6 +32,8 @@
     <a href="https://github.com/fedeeribeiro/makaku_paintings/issues">Request Feature</a>
   </p>
 </div>
+
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -51,68 +59,110 @@
   </ol>
 </details>
 
+
+
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://makakupaintings.netlify.app)
+<div align="center">
+  <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/home-mobile_t2jivk.png">
+  <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/ilustraciones-menu-mobile_de0ikp.png">
+  <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/cuadros-mobile_bplotj.png">
+</div>
+  
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This is a landing page that the user can browse and check the illustrations and paintings that the owner sells. They can order their own by simply filling out a form and uploading an image. The image is uploaded to Cloudinary and the data from the form (plus the image URL) is sent via email, both to the user and to the owner. The app has a responsive design.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Built With
+
+* [![React][React.js]][React-url]
+* [![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)][MUI-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+Get the latest version of npm.
+
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/fedeeribeiro/makaku_paintings.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the project
+   ```sh
+   npm start
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-# Makaku Paintings
-Makaku Paintings is a web application that allows users to browse, purchase and review different illustrations and paintings.
 
-## Features
-The application includes the following features:
+<!-- CONTRIBUTING -->
+## Contributing
 
-User registration and authentication
-Product catalog with categories and search functionality
-Shopping cart and checkout process
-User reviews and ratings for products
-Admin panel to manage products, categories and orders
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Technologies
-The following technologies were used to develop this application:
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-Python (Django web framework)
-HTML/CSS/JavaScript
-Bootstrap (front-end framework)
-PostgreSQL (relational database)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## Installation
-To run the application locally, follow these steps:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Clone the repository:
 
-git clone https://github.com/fedeeribeiro/makaku_paintings.git
-Install the required packages:
 
-Copy code
-pip install -r requirements.txt
-Set up the database:
-
-Copy code
-python manage.py migrate
-Create a superuser account:
-
-Copy code
-python manage.py createsuperuser
-Run the server:
-
-Copy code
-python manage.py runserver
-The application should now be accessible at http://localhost:8000/.
-
+<!-- LICENSE -->
 ## License
-This project is licensed under the MIT License - see `LICENSE.txt` for details.
 
-## Acknowledgements
-This project was inspired by Paintings by Makaku, an online store for African paintings and illustrations.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Federico Edgardo Ribeiro - [![LinkedIn][linkedin-shield]][linkedin-url] - ribeirofede@gmail.com
+
+Project Link: [https://github.com/fedeeribeiro/makaku_paintings](https://github.com/fedeeribeiro/makaku_paintings)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+* [Candela Zeng](https://www.linkedin.com/in/candelazeng/) - Created the design on which the app is based.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -128,7 +178,12 @@ This project was inspired by Paintings by Makaku, an online store for African pa
 [license-url]: https://github.com/fedeeribeiro/makaku_paintings/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ribeirofedericoedgardo
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://res.cloudinary.com/makaku-paintings/image/upload/v1680071567/makaku-paintings-app-assets/home_bno4xw.png
+[product-screenshot-2]: https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/home-mobile_t2jivk.png
+[product-screenshot-3]: https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/ilustraciones-menu-mobile_de0ikp.png
+[product-screenshot-4]: https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/cuadros-mobile_bplotj.png
+[MUI]: https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white
+[MUI-url]: https://mui.com/
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
