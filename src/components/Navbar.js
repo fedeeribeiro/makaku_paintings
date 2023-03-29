@@ -16,7 +16,7 @@ import Divider from "@mui/material/Divider";
 import ListItemButton from "@mui/material/ListItemButton";
 
 export default function Navbar() {
-    const { page, switchPage } = useContext(Context);
+    const { page, switchPage, displaySize } = useContext(Context);
     const [open, setOpen] = useState(false);
 
     const toggleDrawer = (open) => (event) => {
@@ -28,8 +28,8 @@ export default function Navbar() {
 
     return (
         <AppBar position="static" >
-            <Container maxWidth="xl" disableGutters>
-                <Toolbar sx={{ height: '49px', padding: '16px 43px !important', backgroundColor: 'white' }}>
+            <Container maxWidth="100%" disableGutters>
+                <Toolbar sx={{ height: '49px', padding: displaySize === 'xs' ? '12px 22px !important' : '16px 43px !important', backgroundColor: 'white' }}>
                     <Box component={ Link } to='/home' sx={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', display: { xs: 'flex', sm: 'none' } }}>
                         <img height='49px' 
                             alt='Makaku Paintings logo' 
