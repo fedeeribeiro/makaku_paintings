@@ -69,6 +69,7 @@ const ContextProvider = ({ children }) => {
         .then(res => res.json())
         .then(data => {
             setURL(data.url);
+            console.log('URL set')
         });
     }
 
@@ -91,8 +92,8 @@ const ContextProvider = ({ children }) => {
 
         emailjs.send('makaku_paintings_orders', 'orders_template', templateParams, 'Wiexd527yJxBmJMHs')
         .then((result) => {
-
             console.log(result.text);
+            console.log('email sent');
         }, (error) => {
             console.log(error.text);
         });
