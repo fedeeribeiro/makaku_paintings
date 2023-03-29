@@ -1,10 +1,12 @@
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 import Header from './Header.js';
 import Paragraph from './Paragraph.js';
 import Stack from '@mui/material/Stack';
 import StyledAlert from './StyledAlert.js';
+import { Context } from '../../context/Context.js';
 
 const FormAlert = (props) => {
+    const { displaySize } = useContext(Context);
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -20,10 +22,10 @@ const FormAlert = (props) => {
         <main>
             <StyledAlert icon={false} sx={{ color: 'white' }}>
                 <Stack spacing={2}>
-                    <Header disableTypography sx={{ fontSize: '40px', textAlign: 'center' }}>
+                    <Header disableTypography sx={{ fontSize: displaySize === 'xs' ? '20px' : '40px', textAlign: 'center' }}>
                         ¡TU FORMULARIO HA SIDO REGISTRADO CON ÉXITO!
                     </Header>
-                    <Paragraph disableTypography sx={{ alignSelf: 'center' }}>
+                    <Paragraph disableTypography sx={{ fontSize: displaySize === 'xs' ? '12px' : '20px', alignSelf: 'center' }}>
                         Nos contactaremos con vos a la brevedad.
                     </Paragraph>
                     <img style={{ alignSelf: 'center', maxWidth: '60px', verticalAlign: 'bottom', bottom: 0 }}

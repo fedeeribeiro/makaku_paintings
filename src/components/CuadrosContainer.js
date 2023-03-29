@@ -28,7 +28,7 @@ const CuadrosContainer = () => {
         <main>
             <Box  sx={{ display: 'flex',
             padding: displaySize !== 'xs' ? '66px 43px' : '35px 22px',
-            backgroundImage: 'url("https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679545225/makaku/ilustraciones-bg_du5rtl.jpg")',
+            backgroundImage: 'url("https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679545225/makaku/cuadros-bg_jn2epd.jpg")',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center top',
@@ -38,7 +38,7 @@ const CuadrosContainer = () => {
                     <Grid xs={12} md={6} sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
                         <Box>
                             <img style={{ alignSelf: 'flex-end', verticalAlign: 'bottom', bottom: 0, maxWidth: '100%' }} 
-                                alt='mockup de ilustración grande'
+                                alt='mockup de cuadro grande'
                                 src='https://res.cloudinary.com/dlc8f2ajd/image/upload/v1679923714/makaku/mockup-cuadros-page-large_e77pox.png'
                             />
                             <Header disableTypography sx={{ fontSize: displaySize === 'xs' ? '25px' : '50px', marginTop: '20px' }}>CUADRO<br/>PERSONALIZADO</Header>
@@ -61,7 +61,7 @@ const CuadrosContainer = () => {
                                 value={orderDescription}/>
                             <Paragraph disableTypography sx={{ fontSize: displaySize === 'xs' ? '15px' : '20px', alignSelf: 'flex-start' }}>ADJUNTAR IMAGEN</Paragraph>
                             <Input type="file" id="fileUploadButton" onChange={changeHandler} style={{ display: 'none' }} />
-                            <CustomButton variant="contained" id='uploadIlustraciones' sx={{ marginTop: '10px', width: '100%' }}
+                            <CustomButton variant="contained" id='uploadCuadros' sx={{ marginTop: '10px', width: '100%' }}
                                 onClick={ () => { document.getElementById('fileUploadButton').click() }}>
                                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                     <AttachFileIcon fontSize='small' sx={{ marginRight: '5px' }}/>
@@ -74,7 +74,7 @@ const CuadrosContainer = () => {
                             {
                                 !selectedFile ? <HelperText>La imagen tiene que estar en formato <em>.png, .jpg</em> o <em>.jpeg</em>.</HelperText> : <></>
                             }
-                            <CustomButton variant="contained" id='submitIlustraciones' sx={{ fontSize: displaySize === 'xs' ? '12px' : '20px', marginTop: '20px', width: '100%' }} 
+                            <CustomButton variant="contained" id='submitCuadros' sx={{ fontSize: displaySize === 'xs' ? '12px' : '20px', marginTop: '20px', width: '100%' }} 
                                 onClick={ (e) => { submitOrder(e) }}
                                 disabled={!selectedFile || !orderName || !orderEmail || !orderDescription}>
                                 Enviar formulario

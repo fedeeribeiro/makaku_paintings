@@ -12,7 +12,18 @@ const CustomButton = styled(Button)(({ theme }) => ({
         color: 'black',
         fontWeight: 'bold'
     },
-    '&#submitIlustraciones:hover': {
+    '&#uploadCuadros:hover': {
+        backgroundColor: '#F49F00',
+        color: 'black',
+        fontWeight: 'bold'
+    },
+    '&#submitIlustraciones:hover ': {
+        backgroundColor: 'white',
+        border: '1px solid',
+        color: 'black',
+        fontWeight: 'bold'
+    },
+    '&#submitCuadros:hover ': {
         backgroundColor: 'white',
         border: '1px solid',
         color: 'black',
