@@ -71,7 +71,7 @@ const ContextProvider = ({ children }) => {
     const [orderName, setOrderName] = useState('');
     const [orderEmail, setOrderEmail] = useState('');
     const [orderDescription, setOrderDescription] = useState('');
-    const [orderNumber, setOrderNumber] = useState(1);
+    const [orderNumber, setOrderNumber] = useState(Math.floor(100000000 + Math.random() * 900000000));
 
 	const submitOrder = async (e) => {
         const URL = await imageUpload();
@@ -92,7 +92,7 @@ const ContextProvider = ({ children }) => {
             console.log(error.text);
         });
 
-        setOrderNumber(orderNumber + 1);
+        setOrderNumber(Math.floor(100000000 + Math.random() * 900000000));
         setOrderName('');
         setOrderEmail('');
         setOrderDescription('');
