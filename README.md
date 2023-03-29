@@ -66,9 +66,11 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://makakupaintings.netlify.app)
 <div align="center">
-  <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/home-mobile_t2jivk.png">
-  <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/ilustraciones-menu-mobile_de0ikp.png">
-  <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/cuadros-mobile_bplotj.png">
+  <a href="https://makakupaintings.netlify.app">
+    <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/home-mobile_t2jivk.png">
+    <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/ilustraciones-menu-mobile_de0ikp.png">
+    <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680075674/makaku-paintings-app-assets/cuadros-mobile_bplotj.png">
+  </a>
 </div>
   
 
