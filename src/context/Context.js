@@ -77,8 +77,8 @@ const ContextProvider = ({ children }) => {
     const [orderDescription, setOrderDescription] = useState('');
     const [orderNumber, setOrderNumber] = useState(1);
 
-	const submitOrder = (e) => {
-        imageUpload();
+	const submitOrder = async (e) => {
+        await imageUpload();
         const orderType = (e.target.id === 'submitIlustraciones') ? 'Ilustraciones' : 'Cuadros';
         const templateParams = {
             orderNumber,
