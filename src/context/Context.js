@@ -55,8 +55,6 @@ const ContextProvider = ({ children }) => {
         }
 	};
 
-    const [URL, setURL] = useState('');
-
     const imageUpload = async () => {
         const formData = new FormData();
         formData.append('file', selectedFile);
@@ -68,13 +66,7 @@ const ContextProvider = ({ children }) => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log('URL vale', URL)
-            console.log(data)
-            console.log(data.url)
-            const url = data.url;
-            setURL(url);
-            console.log('URL ahora vale', URL)
-            console.log('URL set', URL)
+            return data.url;
         });
     }
 
@@ -84,7 +76,8 @@ const ContextProvider = ({ children }) => {
     const [orderNumber, setOrderNumber] = useState(1);
 
 	const submitOrder = async (e) => {
-        await imageUpload();
+        const URL = await imageUpload();
+        console.log('URL vale', URL)
         const orderType = (e.target.id === 'submitIlustraciones') ? 'Ilustraciones' : 'Cuadros';
         const templateParams = {
             orderNumber,
@@ -108,7 +101,6 @@ const ContextProvider = ({ children }) => {
         setOrderEmail('');
         setOrderDescription('');
         setSelectedFile('');
-        setURL('');
 
         setShowAlert(true);
 	};
