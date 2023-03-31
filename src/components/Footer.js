@@ -1,16 +1,19 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
     return (
         <main>
-            <Box sx={{ display: 'flex', padding: '74px 0', backgroundColor: '#4B8AC9', justifyContent: 'space-around' }}>
+            <Stack useFlexGap={true} sx={{ display: 'flex', padding: '50px 0', backgroundColor: '#4B8AC9', alignItems: 'center' }}>
                 <Button sx={{ color: '#FFFFFF' }} href='https://instagram.com/makakupaintings' target='_blank'>
                     <InstagramIcon sx={{ pr: 1 }}/> @makakupaintings
                 </Button>
-            </Box>
+                <Button sx={{ color: '#FFFFFF', fontSize: '11px', textTransform: 'lowercase' }} href='https://fedeeribeiro.dev' target='_blank'>
+                    site by fedeeribeiro
+                </Button>
+            </Stack>
         </main>
     )
 }

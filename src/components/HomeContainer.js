@@ -26,7 +26,8 @@ const HomeContainer = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center top',
-                justifyContent: 'space-around'
+                justifyContent: 'space-around',
+                marginTop: displaySize === 'xs' ? '80px' : '0px'
             }}>    
                 <Grid container spacing={2}>
                     <Grid xs={12} md={6} sx={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center' }}>

@@ -28,17 +28,26 @@ export default function Navbar() {
 
     return (
         <AppBar position="static" >
-            <Container maxWidth="100%" disableGutters>
-                <Toolbar sx={{ height: '49px', padding: displaySize === 'xs' ? '12px 22px !important' : '16px 43px !important', backgroundColor: 'white' }}>
+            <Container maxWidth="100%" disableGutters
+                sx={{
+                    position: displaySize === 'xs' ? 'fixed' : 'static',
+                    top: displaySize === 'xs' ? '0' : 'auto',
+                    zIndex: displaySize === 'xs' ? '990' : 'auto',
+                }}    
+            >
+                <Toolbar sx={{ height: '49px',
+                            padding: displaySize === 'xs' ? '12px 22px !important' : '16px 43px !important',
+                            backgroundColor: 'white'
+                }}>
                     <Box component={ Link } to='/home' sx={{ position: 'absolute', left: '50%', transform: 'translateX(-50%)', display: { xs: 'flex', sm: 'none' } }}>
                         <img height='49px' 
-                            alt='Makaku Paintings logo' 
+                            alt='Makakū Paintings logo' 
                             src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071566/makaku-paintings-app-assets/logoPNG_jknfmg.png'/>
                     </Box>
                     <StyledTabs value={page} onChange={switchPage} sx={{ display: { xs: 'none', sm: 'flex' } }}>
                         <Box component={ Link } to='/home'>
                             <img height='49px' 
-                                alt='Makaku Paintings logo' 
+                                alt='Makakū Paintings logo' 
                                 src='https://res.cloudinary.com/makaku-paintings/image/upload/v1680071566/makaku-paintings-app-assets/logoPNG_jknfmg.png'/>
                         </Box>                
                         <StyledTab id='ilustraciones' label='ILUSTRACIONES' component={ Link } to='/ilustraciones' />
@@ -58,6 +67,13 @@ export default function Navbar() {
                         open={open}
                         onClose={toggleDrawer(false)}
                         onOpen={toggleDrawer(true)}
+                        PaperProps={
+                            { sx: { width: '100%', maxWidth: '280px' } }
+                        }
+                        transitionDuration={{
+                            enter: 500,
+                            exit: 500
+                        }}
                     >
                         <Box sx={{
                         p: 2,
@@ -71,6 +87,7 @@ export default function Navbar() {
                             <Box>
                                 <ListItemButton id='drawerHome' className={ page === 0 ? 'drawerHome' : '' }
                                     component={ Link } to='/home'
+                                    onClick={toggleDrawer(false)}
                                     sx={{
                                         color: 'rgba(0, 0, 0, 0.7)',
                                         marginBottom: '10px',
@@ -87,6 +104,7 @@ export default function Navbar() {
                                 </ListItemButton>
                                 <ListItemButton id='drawerIlustraciones' className={ page === 1 ? 'drawerIlustraciones' : '' }
                                     component={ Link } to='/ilustraciones'
+                                    onClick={toggleDrawer(false)}
                                     sx={{
                                         color: 'rgba(0, 0, 0, 0.7)',
                                         marginBottom: '10px',
@@ -103,6 +121,7 @@ export default function Navbar() {
                                 </ListItemButton>
                                 <ListItemButton id='drawerCuadros' className={ page === 2 ? 'drawerCuadros' : '' }
                                     component={ Link } to='/cuadros'
+                                    onClick={toggleDrawer(false)}
                                     sx={{
                                         color: 'rgba(0, 0, 0, 0.7)',
                                         marginBottom: '10px',
