@@ -16,7 +16,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/fedeeribeiro/makaku_paintings">
-    <img src="https://res.cloudinary.com/dlc8f2ajd/image/upload/v1680009704/makaku/logoAlert_l0ut7i.svg" alt="Logo" width="80" height="80">
+    <img src="https://res.cloudinary.com/makaku-paintings/image/upload/v1680071618/makaku-paintings-app-assets/logoSVG_xx0l1d.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">makaku_paintings</h3>
